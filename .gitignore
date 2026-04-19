@@ -1,0 +1,7 @@
+data/processed/*.csv
+artifacts/*.pkl
+artifacts/*.csv
+__pycache__/
+*.pyc
+.env
+.ipynb_checkpoints/
