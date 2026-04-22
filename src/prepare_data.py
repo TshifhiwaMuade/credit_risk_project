@@ -7,7 +7,7 @@ import seaborn as sns
 
 # 1. Project paths (portable)
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
-RAW_DATA_PATH = PROJECT_ROOT / "data" / "raw" / "credit_risk_dataset.csv"
+RAW_DATA_PATH = PROJECT_ROOT / "data" / "raw" / "credit_risk_assessment_cyo_project_dataset.xlsx"
 PROCESSED_DATA_PATH = PROJECT_ROOT / "data" / "processed" / "cleaned_dataset.csv"
 FIGURES_DIR = PROJECT_ROOT / "reports" / "figures"
 
@@ -23,12 +23,12 @@ for file in FIGURES_DIR.glob("*.png"):
 if not RAW_DATA_PATH.exists():
     raise FileNotFoundError(
         f"Could not find dataset at: {RAW_DATA_PATH}\n"
-        f"Make sure 'credit_risk_dataset.csv' is inside data/raw/"
+        f"Make sure 'credit_risk_assessment_cyo_project_dataset' is inside data/raw/"
     )
 
 
 # 3. Load dataset
-df = pd.read_csv(RAW_DATA_PATH)
+df = pd.read_excel(RAW_DATA_PATH)
 
 # 4. Check and remove duplicates
 duplicate_count = int(df.duplicated().sum())
