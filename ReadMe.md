@@ -5,7 +5,7 @@
 
 ## Links
 - **GitHub Repository:** https://github.com/TshifhiwaMuade/credit_risk_project
-- **Web Application:** *(link to be added after deployment)*
+- **Web Application:** https://credit-risk-project-d895.onrender.com
 
 ---
 
